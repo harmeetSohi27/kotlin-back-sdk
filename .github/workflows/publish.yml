@@ -50,7 +50,7 @@ jobs:
       - name: Publish to the Github packages
         run: ./gradlew publish
         env:
-          GITHUB_TOKEN: "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"
+          GITHUB_TOKEN: "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"
           GITHUB_ACTOR: "harmeetSohi27"
   clean:
     needs: publish

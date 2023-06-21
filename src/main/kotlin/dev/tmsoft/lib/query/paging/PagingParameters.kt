@@ -10,10 +10,11 @@ fun ApplicationRequest.pagingParameters(maxPageSize: Int = 100): PagingParameter
 fun Parameters.paging(maxPageSize: Int = 100, default: Int = 30): PagingParameters {
     val pageSize = this["pageSize"]?.toIntOrNull() ?: default
     val page = this["page"]?.toIntOrNull() ?: 1
-
+    val searchText= this["searchText"]?:""
     return PagingParameters(
         if (pageSize > maxPageSize) maxPageSize else pageSize,
-        page
+        page,
+        searchText
     )
 }
 
@@ -21,7 +22,7 @@ data class TestParams(val pageSize: Int, val currentPage: Int, val searchText : 
     val offset = offset(pageSize, currentPage)
 
 }
-data class PagingParameters(val pageSize: Int, val currentPage: Int) {
+data class PagingParameters(val pageSize: Int, val currentPage: Int,val searchText: String) {
     val offset = offset(pageSize, currentPage)
 }
 

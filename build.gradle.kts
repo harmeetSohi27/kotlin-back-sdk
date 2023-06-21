@@ -143,7 +143,7 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/harmeetSohi27/kotlin-back-sdk")
             credentials {
-                username = "harmeetSohi27"
+                username = "harmeetsohi27"
                 password = "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"
             }
         }

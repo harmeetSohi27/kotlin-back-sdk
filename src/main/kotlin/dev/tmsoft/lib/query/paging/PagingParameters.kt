@@ -18,7 +18,6 @@ fun Parameters.paging(maxPageSize: Int = 100, default: Int = 30): PagingParamete
 }
 
 data class TestParams(val pageSize: Int, val currentPage: Int, val searchText : String) {
-    val offset = offset(pageSize, currentPage)
 }
 data class PagingParameters(val pageSize: Int, val currentPage: Int) {
     val offset = offset(pageSize, currentPage)

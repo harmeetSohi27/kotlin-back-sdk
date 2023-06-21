@@ -14,7 +14,7 @@ plugins {
 }
 
 group = "com.github.turbomates"
-version = "0.5.12"
+version = "0.5.13"
 
 
 repositories {
@@ -144,7 +144,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/harmeetSohi27/kotlin-back-sdk")
             credentials {
                 username = "harmeetsohi27@gmail.com"
-                password = "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"
+                password = "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"
             }
         }
     }

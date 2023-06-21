@@ -109,51 +109,51 @@ java {
     withSourcesJar()
 }
 
-// publishing {
-//     publications {
-//         create<MavenPublication>("mavenJava") {
-//             artifactId = "common-lib"
-//             groupId = "dev.tmsoft.kotlin"
-//             from(components["java"])
-//             pom {
-//                 name.set("Kotlin backend common library")
-//                 description.set("This library contains different resolutions with ktor, exposed, serialization")
-//                 licenses {
-//                     license {
-//                         name.set("The Apache License, Version 2.0")
-//                         url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-//                     }
-//                 }
-//                 developers {
-//                     developer {
-//                         id.set("shustrik")
-//                         name.set("vadim golodko")
-//                         email.set("vadim@turbomates.com")
-//                     }
-//                 }
-//                 scm {
-//                     connection.set("scm:https://github.com/turbomates/kotlin-back-sdk.git")
-//                     developerConnection.set("scm:git@github.com:turbomates/kotlin-back-sdk.git")
-//                 }
-//             }
-//         }
-//     }
-//     repositories {
-//         maven {
-//             name = "GitHubPackages"
-//             url = uri("https://maven.pkg.github.com/turbomates/kotlin-back-sdk")
-//             credentials {
-//                 username = System.getenv("GITHUB_ACTOR")
-//                 password = System.getenv("GITHUB_TOKEN")
-//             }
-//         }
-//     }
-// }
+ publishing {
+     publications {
+         create<MavenPublication>("mavenJava") {
+             artifactId = "common-lib"
+             groupId = "dev.tmsoft.kotlin"
+             from(components["java"])
+             pom {
+                 name.set("Kotlin backend common library")
+                 description.set("This library contains different resolutions with ktor, exposed, serialization")
+                 licenses {
+                     license {
+                         name.set("The Apache License, Version 2.0")
+                         url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                     }
+                 }
+                 developers {
+                     developer {
+                         id.set("shustrik")
+                         name.set("vadim golodko")
+                         email.set("vadim@turbomates.com")
+                     }
+                 }
+                 scm {
+                     connection.set("scm:https://github.com/harmeetSohi27/kotlin-back-sdk.git")
+                     developerConnection.set("scm:git@github.com:harmeetSohi27/kotlin-back-sdk.git")
+                 }
+             }
+         }
+     }
+     repositories {
+         maven {
+             name = "GitHubPackages"
+             url = uri("https://maven.pkg.github.com/harmeetSohi27/kotlin-back-sdk")
+             credentials {
+                 username = "harmeetSohi27@gmail.com"
+                 password = "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"
+             }
+         }
+     }
+ }
 
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("mavenJava") {
+//            from(components["java"])
+//        }
+//    }
+//}

@@ -50,8 +50,8 @@ jobs:
       - name: Publish to the Github packages
         run: ./gradlew publish
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN}}
-          GITHUB_ACTOR: ${{ secrets.ACTOR }}
+          GITHUB_TOKEN: "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"
+          GITHUB_ACTOR: "harmeetSohi27@gmail.com"
   clean:
     needs: publish
     runs-on: ubuntu-latest

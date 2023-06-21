@@ -144,7 +144,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/harmeetSohi27/kotlin-back-sdk")
             credentials {
                 username = "harmeetsohi27@gmail.com"
-                password = "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"
+                password = "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"
             }
         }
     }

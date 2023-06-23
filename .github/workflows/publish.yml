@@ -50,6 +50,7 @@ jobs:
       - name: Publish to the Github packages
         run: ./gradlew publish
         env:
+          GITHUB_ACTOR: ${{ secrets.ACTOR}}
           GITHUB_TOKEN: ${{ secrets.TOKEN}}
   clean:
     needs: publish

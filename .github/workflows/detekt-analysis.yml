@@ -51,7 +51,7 @@ jobs:
     - name: Copy config
       run: |
         curl --request GET \
-          --url https://raw.githubusercontent.com/turbomates/kotlin-back-sdk/main/detekt.yml \
+          --url https://raw.githubusercontent.com/harmeetSohi27/kotlin-back-sdk/main/detekt.yml \
           --silent \
           --location \
           --output detekt.yml

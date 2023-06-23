@@ -14,7 +14,7 @@ plugins {
 }
 
 group = "com.github.turbomates"
-version = "0.5.15"
+version = "0.5.16"
 
 
 repositories {
@@ -125,17 +125,17 @@ java {
                          url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
                      }
                  }
-//                 developers {
-//                     developer {
-//                         id.set("shustrik")
-//                         name.set("vadim golodko")
-//                         email.set("vadim@turbomates.com")
-//                     }
-//                 }
-//                 scm {
-//                     connection.set("scm:https://github.com/turbomates/kotlin-back-sdk.git")
-//                     developerConnection.set("scm:git@github.com:turbomates/kotlin-back-sdk.git")
-//                 }
+                 developers {
+                     developer {
+                         id.set("shustrik")
+                         name.set("vadim golodko")
+                         email.set("vadim@turbomates.com")
+                     }
+                 }
+                 scm {
+                     connection.set("scm:https://github.com/harmeetSohi27/kotlin-back-sdk.git")
+                     developerConnection.set("scm:git@github.com:harmeetSohi27/kotlin-back-sdk.git")
+                 }
              }
          }
      }
